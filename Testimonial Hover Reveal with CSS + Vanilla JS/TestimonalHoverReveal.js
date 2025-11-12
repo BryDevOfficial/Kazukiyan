@@ -44,19 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     i++;
   }
 
-  // Optional: remove shadow when leaving container
-  const container = document.querySelector(".testimonialLeftDiv");
-  if (container) {
-    container.addEventListener("mouseleave", function() {
-      if (activeHover) activeHover.classList.remove("shadowperson");
-      activeHover = null;
-
-      // Optionally, show the default testimonial again
-      const defaultEl = document.getElementById("defaultElementShow");
-      if (defaultEl) showElement(defaultEl);
-    });
-  }
-
   // Show default testimonial on load
   const defaultEl = document.getElementById("defaultElementShow");
   if (defaultEl) showElement(defaultEl);
