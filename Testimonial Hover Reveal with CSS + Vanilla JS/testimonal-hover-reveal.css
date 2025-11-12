@@ -19,4 +19,45 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
   transition: box-shadow 0.3s ease;
+
+}
+
+.person-testimonials-div {
+  overflow-y: scroll;
+  height: 200px; /* Default for mobile - change this if you want to change the heigh in mobile view*/
+ padding-right: 12px;
+  scrollbar-width: thin;
+  scrollbar-color: #845a93 transparent;
+  position: relative;
+
+}
+/*Person List DIV CSS*/
+
+/* WebKit browsers */
+.person-testimonials-div::-webkit-scrollbar {
+  width: 6px;
+}
+
+.person-testimonials-div::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.person-testimonials-div::-webkit-scrollbar-thumb {
+  background-color: #845a93;
+  border-radius: 4px;
+}
+
+
+/* iPad (typically 768px to 1024px) Set this if you want to change height in ipad view */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .person-testimonials-div {
+    height: 250px;
+  }
+}
+
+/* Desktop (larger than 1024px) Set this if you want to change height in desktop view*/
+@media (min-width: 1025px) {
+  .person-testimonials-div {
+    height: 300px;
+  }
 }
