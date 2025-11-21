@@ -1,6 +1,6 @@
-
+ 
 (function() {
-  const TOTAL = 100; // number of particles
+  const TOTAL = 220; // number of particles
   const container = document.querySelector('.particle-bg');
   const sectionWidth = window.innerWidth;
   const sectionHeight = window.innerHeight;
